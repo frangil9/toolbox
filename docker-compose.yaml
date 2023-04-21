@@ -1,0 +1,30 @@
+version: "3"
+services:
+  
+  ui:
+   build:
+      context: ./ui
+      dockerfile: Dockerfile
+   ports:
+    -  3000:80
+   container_name: toolbox-ui
+   networks:
+    -  toolbox-net
+   depends_on:
+    - api
+   stdin_open: true
+   tty: true
+
+  api:
+   build:
+      context: ./api
+      dockerfile: Dockerfile
+   ports:
+     - 3001:3001
+   container_name: toolbox-api
+   networks:
+     - toolbox-net   
+
+networks:
+  toolbox-net:
+    driver: bridge

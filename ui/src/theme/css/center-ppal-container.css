@@ -1,0 +1,142 @@
+.wrapper-main-content {
+    margin-top: 80px;
+    padding-bottom: 150px;
+    position: relative;
+}
+
+/****************************/
+
+.main-content, .wrapper-col {
+  padding: 0.25em;
+    display: -webkit-box; 
+        display: -webkit-flex;  
+        display: -ms-flexbox; 
+        display: flex;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: space-between;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+}
+
+.wrapper-col-row-n-grow {
+  align-items: start;
+}
+
+.wrapper-col-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.wrapper-col { 
+  width: 100%;
+  max-width: 1900px;
+  margin: 2em 0;
+  /*padding: 0 2.5em;*/ 
+}
+
+.two-col .wrapper-col {
+  padding: 0;
+  margin: 0 0;
+}
+
+.two-col {
+  width: 48%;
+}
+
+.three-col, .col-medium {
+  width: 32%;
+}
+
+.col-small {
+  width: 28%;
+  padding-right: 1em;
+  -webkit-box-flex: 1;
+    -ms-flex: 1;
+        flex: 1;
+}
+
+.col-small--grow-2 {
+  -webkit-box-flex: 1;
+    -ms-flex: 2;
+        flex: 2;
+}
+
+.general-padding {
+  padding: 0 1em
+}
+
+.general-module {
+  padding: 0.5em 2em;
+}
+
+.general-module--forms {
+  padding: 0.5em 4em;
+}
+
+/* MEDIA QUERY´s */
+
+/* MQ 1100px */
+
+@media screen and (max-width: 1100px) {
+  .column-circle .three-col {
+    width: 50%;
+    margin-bottom: 1em;
+  }
+}
+
+/* MQ 800px */
+
+@media screen and (max-width: 800px) {
+  .wrapper-main-content {
+    margin-left: 0px;
+    padding-bottom: 90px;
+    margin-top: 80px;
+  }
+
+  .wrapper-col { 
+    padding: 0 0.5em; 
+  }
+
+  .col-small--grow-2 {
+    margin-top: 2em;
+    -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  }
+
+  .col-medium {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
+
+/* MQ 500px */
+
+@media screen and (max-width: 500px) {
+  .two-col, .three-col, .col-medium {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  .general-module {
+    padding: 0.5em 0.25em;
+  }
+}
+
+
+/* MQ 480px */
+
+@media screen and (max-width: 480px) {
+  .col-small {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 2em;
+    -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  }
+}

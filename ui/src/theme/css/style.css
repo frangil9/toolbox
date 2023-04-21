@@ -1,0 +1,43 @@
+@import url("center-ppal-container.css");
+
+
+/*******/
+
+body {
+	font-family: 'Imago', 'Roboto', Arial, Helvetica, sans-serif;
+	margin: 0;
+	color: #3A3A3A;
+	font-size: 15px;
+}
+
+a {
+	color: #32A4C1;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #6E6E6E;
+}
+
+/* gray link */
+
+a.gray-link {
+	color: #6E6E6E;
+	text-decoration: none;
+}
+
+a.gray-link:hover {
+	color: #1C72B6;
+}
+
+:focus {
+	outline: none;
+}
+
+/* GLOBAL TIPOGRAPHY */
+
+h1 {
+	color: #000;
+	font-weight: bold;
+	font-size: calc(20px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
